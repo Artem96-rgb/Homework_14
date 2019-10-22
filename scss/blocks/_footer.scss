@@ -9,7 +9,7 @@
     &__content {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: center;   
     }
 
     &__text {
@@ -23,4 +23,24 @@
     &__logo {
         box-shadow: none;
     }
+ 
+    @media screen and (max-width: 767px) {
+        &__content {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__logo {
+            order: 1;
+        }
+
+        &__text {
+            order: 2;
+            margin: 5px 0;
+        }
+
+        &__copyright {
+            order: 3;
+        }
+    }   
 }

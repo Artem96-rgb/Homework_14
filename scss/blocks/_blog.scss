@@ -16,7 +16,6 @@
 
     &__item {
         position: relative;
-        margin-bottom: 50px;
     }
 
     &__contain {
@@ -52,13 +51,40 @@
     }
 
     &__button {
-        margin: 0 auto;
+        margin: 50px auto 0;
         background: #f72b3b;
     }
 
     &__button:hover {
-        margin: 0 auto;
         background: darken(#f72b3b, 10%);
+    }
+
+     @media screen and (max-width:1199px) {
+        &__item {
+            margin-bottom: 30px;
+        }
+
+         &__subtitle {
+            font-size: 16px;
+        }  
+    }
+
+    @media screen and (max-width:575px) {
+        & {
+            padding-bottom: 80px;
+        }
+
+        &__title {
+            font-size: 75px;
+        }  
+
+        &__text {
+            font-size: 14px;
+        } 
+
+        &__button {
+            margin-top: 25px;
+        }
     }
 }
 

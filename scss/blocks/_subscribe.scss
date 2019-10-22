@@ -4,6 +4,7 @@
     color: #262626;
     background: url(../img/bggrape.png) no-repeat;
     background-size: cover;
+    background-position: center top;
 
 
     &__title {
@@ -33,5 +34,9 @@
 
     &__button:hover {
         background: darken(#96b92c, 10%);
+    }
+
+    @media screen and (max-width:575px) {
+        background-image: none;
     }
 }

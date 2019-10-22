@@ -10,20 +10,25 @@
     &__logo {
         box-shadow: none;
     }
-}
 
-.nav {
-    display: flex;
-    &__link {
-        font-size: 16px;
-        font-weight: 700;
-        color: #262626;
-        margin-left: 30px;
-        border-top: 2px solid transparent;
-        padding-top: 8px;
-        text-transform: uppercase;
-        &:hover {
-            border-color: #ff6033;
-        }
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
     }
+
+    @media screen and (max-width: 991px) {
+        
+        &__wrap {
+            display: block;   
+        }  
+        
+        & {
+            display: block;
+            width: 100%;
+            position: absolute; 
+        }  
+    }
+    
 }
