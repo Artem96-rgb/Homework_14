@@ -11,24 +11,11 @@
         box-shadow: none;
     }
 
-    &__wrap {
-        display: flex;
+    &__content {
+        
         justify-content: space-between;
         align-items: center;
         position: relative;
-    }
-
-    @media screen and (max-width: 991px) {
-        
-        &__wrap {
-            display: block;   
-        }  
-        
-        & {
-            display: block;
-            width: 100%;
-            position: absolute; 
-        }  
     }
     
 }

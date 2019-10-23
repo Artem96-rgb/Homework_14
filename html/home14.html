@@ -15,10 +15,16 @@
 
     <header class="header">
         <div class="container">
-            <div class="header__wrap">
+            <div class="header__content d-block d-lg-flex">
                 <div>
                     <img src="../img/logo.png" class="header__logo" alt="Cahee">
                 </div>
+                <input type="checkbox" id="burger">
+                <label for="burger" class="burger__label d-block d-lg-none">Menu</label>
+                <div class="burger__item burger__item--first"></div>
+                <div class="burger__item burger__item--second"></div>
+                <div class="burger__item burger__item--third"></div>
+                <div class="burger__item burger__item--fourth"></div>
                 <nav class="nav">
                     <a href="#" class="nav__link">Home</a>
                     <a href="#" class="nav__link">About</a>
@@ -162,12 +168,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <img src="../img/glass.jpg" class="gallery__picture" alt="glass">
+                <div class="row mt-20">
+                    <div class="col-6">
+                        <img src="../img/glass.jpg" class="gallery__picture" alt="glass">
 
-                </div>
-                <div class="col-6">
-                    <img src="../img/garnet.jpg" class="gallery__picture" alt="garnet">
+                    </div>
+                    <div class="col-6">
+                        <img src="../img/garnet.jpg" class="gallery__picture" alt="garnet">
+                    </div>
                 </div>
             </div>
             <a href="#" class="btn gallery__button">View more</a>

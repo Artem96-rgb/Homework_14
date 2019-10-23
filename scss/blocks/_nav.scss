@@ -1,8 +1,11 @@
 .nav {
     display: flex;
+    font-size: 16px;
+    transition: .5s all;
+    width: 100%;
+    overflow: hidden;
 
     &__link {
-        font-size: 16px;
         font-weight: 700;
         color: #262626;
         margin-left: 30px;
@@ -16,7 +19,18 @@
 
     @media screen and (max-width: 991px) {
         & {
-            display: none;
+           position: absolute;
+           display: block;
+           bottom: 0;
+           left: 0;
+           transform: translateY(100%);
+           font-size: 0;
+           max-height: 0;
+        }
+
+        &__link {
+            margin-left: 0;
+            border: none;
         }
     }
 } 
