@@ -15,7 +15,7 @@
 
     <header class="header">
         <div class="container">
-            <div class="header__content d-block d-lg-flex">
+            <div class="header__content">
                 <div>
                     <img src="../img/logo.png" class="header__logo" alt="Cahee">
                 </div>
@@ -185,7 +185,7 @@
     <div class="subscribe">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6 col-lg-8 col-md-10 col-sm-11 col-12">
+                <div class="col-xl-6 col-lg-8 col-md-11 col-sm-11 col-12">
                     <h4 class="subscribe__title">Subscribe To Us</h4>
                     <p class="text subscribe__text">Dolor sit amet, consectetur adipisicing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -195,11 +195,14 @@
             </div>
             <form method="GET">
                 <div class="row">
-                    <div class="col-6">
-                        <input type="email" class="subscribe__input" placeholder="Your email address...">
+                    <div class="col-12 col-md-6">
+                        <div class="subscribe__form">
+                            <input type="email" class="subscribe__input" placeholder="Your email address...">
+                            <label for="" class="subscribe__label">Your email address...</label>
+                        </div>
                     </div>
-                    <div class="col-2">
-                        <a href="#" class=" btn subscribe__button">Subscribe</a>
+                    <div class="col-md-2 ">
+                        <a href="#" class="btn subscribe__button">Subscribe</a>
                     </div>
                 </div>
             </form>
@@ -279,7 +282,7 @@
     <div class="contact">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-8 m-auto">
+                <div class="col-12 col-lg-5 col-md-7 m-auto">
                     <h2 class="title contact__title">Contact</h2>
                     <p class="text contact__text">For new projects, ideas, business or anything
                         you'd like to discuss, contact with me!
@@ -291,15 +294,23 @@
                 <div class="col-lg-5 order-2 order-lg-1">
                     <form method="GET">
                         <input type="text" class="contact__input" value="Auskteez Tran" name="name">
-                        <input type="email" class="contact__input" placeholder="Your email..." name="email">
-                        <input type="text" name="phone" id="phone" placeholder="Your phone number..."
-                            class="contact__input" mask="0000 0000 0000">
-                        <textarea name="" class="contact__textarea" placeholder="Your messge..."></textarea>
+                        <div class="contact__form">
+                            <input type="email" class="contact__input" name="email">
+                            <label for="" class="contact__label">Your email...</label>
+                        </div>
+                        <div class="contact__form">
+                            <input type="text" name="phone" class="contact__input">
+                            <label for="" class="contact__label">Your phone number...</label>
+                        </div>
+                        <div class="contact__form">
+                            <textarea name="" class="contact__textarea"></textarea>
+                            <label for="" class="contact__label"> Your message...</label>
+                        </div>
                         <input type="submit" value="Send" class="btn contact__button">
                     </form>
                 </div>
 
-                <div class="offset-lg-3 col-lg-4  order-1 order-lg-2">
+                <div class="offset-lg-3 col-lg-4 order-1 order-lg-2">
                     <div class="contact__wrap">
                         <h5 class="contact__subtitle">Address</h5>
                         <div class="contact__data">123 City name, Street, City, Country</div>

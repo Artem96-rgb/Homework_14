@@ -5,12 +5,17 @@
     background: url(../img/bggrape.png) no-repeat;
     background-size: cover;
     background-position: center top;
+    
 
 
     &__title {
         font-size: 40px;
         font-weight: 700;
         margin-bottom: 16px;
+    }
+
+    &__form {
+        position: relative;
     }
 
     &__input {
@@ -20,10 +25,12 @@
         margin-top: 27px;
     }
 
-    ::-webkit-input-placeholder {
+    &__label {
         font-size: 15px;
         font-weight: 300;
-        color: #262626;
+        position: absolute;
+        top: 48px;
+        left: 14px;
     }
 
     &__button {
@@ -37,6 +44,16 @@
     }
 
     @media screen and (max-width:575px) {
-        background-image: none;
+        & {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            background-image: none;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+
+        
     }
 }

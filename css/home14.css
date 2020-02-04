@@ -49,6 +49,9 @@ input, textarea {
     -webkit-box-shadow: none;
     box-shadow: none; }
   .header__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -110,7 +113,6 @@ input, textarea {
   -webkit-transition: .5s all;
   -o-transition: .5s all;
   transition: .5s all;
-  width: 100%;
   overflow: hidden; }
   .nav__link {
     font-weight: 700;
@@ -123,6 +125,7 @@ input, textarea {
       border-color: #ff6033; }
   @media screen and (max-width: 991px) {
     .nav {
+      width: 100%;
       position: absolute;
       display: block;
       bottom: 0;
@@ -237,7 +240,8 @@ input, textarea {
       font-size: 75px; } }
   @media screen and (max-width: 575px) {
     .service {
-      padding: 80px 0; }
+      padding-top: 80px;
+      padding-bottom: 80px; }
     .service__title {
       font-size: 50px;
       text-align: center; }
@@ -285,15 +289,19 @@ input, textarea {
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 16px; }
+  .subscribe__form {
+    position: relative; }
   .subscribe__input {
     width: 100%;
     padding: 20px 15px;
     border: 1px solid #262626;
     margin-top: 27px; }
-  .subscribe ::-webkit-input-placeholder {
+  .subscribe__label {
     font-size: 15px;
     font-weight: 300;
-    color: #262626; }
+    position: absolute;
+    top: 48px;
+    left: 14px; }
   .subscribe__button {
     background: #96b92c;
     width: 170px;
@@ -302,7 +310,11 @@ input, textarea {
     background: #759022; }
   @media screen and (max-width: 575px) {
     .subscribe {
-      background-image: none; } }
+      padding-top: 80px;
+      padding-bottom: 80px;
+      background-image: none; }
+    .subscribe__text {
+      font-size: 14px; } }
 
 .blog {
   background: #b07cf7;
@@ -363,7 +375,9 @@ input, textarea {
     .blog__text {
       font-size: 14px; }
     .blog__button {
-      margin-top: 25px; } }
+      margin-top: 25px; }
+    .blog__item img {
+      width: 100%; } }
 
 .date {
   font-weight: bold;
@@ -397,6 +411,8 @@ input, textarea {
     margin-bottom: 20px; }
   .contact__text {
     margin-bottom: 44px; }
+  .contact__form {
+    position: relative; }
   .contact__input {
     width: 100%;
     padding: 16px 20px;
@@ -411,6 +427,13 @@ input, textarea {
   .contact__input:focus {
     background: #00c4c4;
     border-left: 5px solid #355b82; }
+  .contact__label {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    position: absolute;
+    top: 17px;
+    left: 20px; }
   .contact__textarea {
     width: 100%;
     background: rgba(105, 211, 214, 0.5);
@@ -438,7 +461,7 @@ input, textarea {
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 3px; }
-  .contact__date {
+  .contact__data {
     font-size: 20px;
     font-weight: 300; }
   @media screen and (max-width: 575px) {
